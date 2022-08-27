@@ -1,0 +1,16 @@
+function calculadorBhask(ax2, bx, c){
+    let delta = bx ** 2 - 4 * ax2 * c;
+    if(delta >= 0){
+        let resposta = [];
+        x1 = (-bx + Math.sqrt(delta)) / (2 * ax2);
+        resposta.push(x1);
+        x2 = (-bx - Math.sqrt(delta)) / (2 * ax2);
+        resposta.push(x2);
+
+        return resposta;
+    }else{
+        console.log("Delta é negativo");
+    }
+}
+
+console.log(calculadorBhask(1,5,-14));
