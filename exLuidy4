@@ -1,0 +1,18 @@
+const lista = (numero) => {    
+
+var res = [];
+for(let i = 1; i <=numero; i++){
+    if(i % 5 == 0 && i % 9 == 0 ){
+        res.push("Luidy Moura");
+    }else if(i % 5 == 0){
+        res.push("Luidy");
+        
+    }else if(i % 9 == 0){
+    res.push("Moura");
+    }else{
+    res.push(i);
+}
+}
+return(res);
+console.log(res);
+}
