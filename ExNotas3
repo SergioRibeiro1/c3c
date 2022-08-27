@@ -11,6 +11,7 @@ if(notaAluno < 38){
     
     }else{
         return Math.ceil(notaAluno/5) * 5;
+        return notaAluno;
         console.log("Parabéns você passou!");
         }
 }
