@@ -1,0 +1,16 @@
+var notaAluno = 45;
+
+if(notaAluno < 38){
+    console.log("Sua Nota é " + (notaAluno) + " Infelizmente você foi reprovado");
+}else if(notaAluno <= 38 && notaAluno <= 40) {
+    console.log("Sua Nota é 40 você passou mas por pouco!");
+}else if(notaAluno > 40){
+    if(notaAluno % 5 == 0){
+    return notaAluno;
+    console.log("Parabéns você passou!");
+    
+    }else{
+        return Math.ceil(notaAluno/5) * 5;
+        console.log("Parabéns você passou!");
+        }
+}
